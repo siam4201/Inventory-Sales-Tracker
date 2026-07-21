@@ -5,11 +5,11 @@ class BaseItem:
         self.item_id = item_id
         self.name = name
         self.category = category
-        self.price = price                                      
+        self.price = float(price)                                      
 
     def __str__(self):
-        return f"[{self.item_id}] {self.name} - {self.category}"
-
+        return f"[{self.item_id}] {self.name} - {self.category} @ ${self.price:.2f}"
+    
 class Product(BaseItem):
     def __init__(self, product_id, name, category, price, quantity, low_stock_threshold):
         super().__init__(product_id, name, category, price)
