@@ -128,8 +128,8 @@ class InventoryManager:
             raise ValueError("Product ID, Name, and Type cannot be empty.")
             
         p_id = p_id.strip().upper()
-        if p_id in self.product_ids_set:
-            raise ValueError(f"Product ID '{p_id}' is already taken.")
+        if p_id not in self.products:
+            raise KeyError(f"Product ID '{p_id}' not found.")
             
         if category not in self.CATEGORIES:
             raise ValueError(f"Invalid Category. Allowed: {self.CATEGORIES}")
