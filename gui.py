@@ -6,11 +6,9 @@ class InventoryApp:
         self.root = root
         self.manager = manager
         
-        self.root.title("Basic Inventory Tool")
-        self.root.geometry("800x600")
-        
-        self.lbl_welcome = tk.Label(self.root, text="Welcome to Inventory App (WIP)", font=("Arial", 16))
-        self.lbl_welcome.pack(pady=30)
+        self.root.title("My Inventory & Sales Tracker")
+        self.root.geometry("1000x650")
+        self.root.configure(bg="#18181b")
         
         self.notebook = ttk.Notebook(self.root)
         self.notebook.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
@@ -22,3 +20,12 @@ class InventoryApp:
         self.notebook.add(self.tab_dash, text=" My Dashboard ")
         self.notebook.add(self.tab_inv, text=" Manage Stock ")
         self.notebook.add(self.tab_sales, text=" Log a Sale ")
+        
+        self.build_dashboard()
+        
+    def build_dashboard(self):
+                               
+        card_frame = tk.Frame(self.tab_dash, bg="#18181b")
+        card_frame.pack(fill=tk.X, pady=10)
+        
+        tk.Label(card_frame, text="Dashboard under construction...", fg="white", bg="#18181b").pack()
