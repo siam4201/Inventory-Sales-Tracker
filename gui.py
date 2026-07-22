@@ -23,6 +23,7 @@ class InventoryApp:
         
         self.build_dashboard()
         self.build_inventory_manager()
+        self.build_sales_manager()
         
     def build_dashboard(self):
         pass                          
@@ -80,3 +81,27 @@ class InventoryApp:
             tree.heading(col, text=text)
             tree.column(col, width=width, anchor=tk.W if col in ("name", "cat") else tk.CENTER)
         tree.pack(fill=tk.BOTH, expand=True)
+
+    def build_sales_manager(self):
+        record_f = tk.Frame(self.tab_sales, bg="#18181b")
+        record_f.pack(fill=tk.X, pady=10)
+        
+        tk.Label(record_f, text="Choose a product to sell:", fg="white", bg="#18181b").pack(side=tk.LEFT, padx=5)
+        self.cmb_sales_prod = ttk.Combobox(record_f, state="readonly", width=30)
+        self.cmb_sales_prod.pack(side=tk.LEFT, padx=5)
+        
+        tk.Label(record_f, text="How many?", fg="white", bg="#18181b").pack(side=tk.LEFT, padx=(15, 5))
+        self.ent_sales_qty = ttk.Entry(record_f, width=8)
+        self.ent_sales_qty.pack(side=tk.LEFT, padx=5)
+        
+        self.lbl_sales_preview = tk.Label(record_f, text="Total: $0.00 (In Stock: -)", font=("Segoe UI", 10, "bold"), fg="#ffbc42", bg="#18181b")
+        self.lbl_sales_preview.pack(side=tk.LEFT, padx=15)
+        
+        tk.Button(record_f, text=" Confirm Sale ").pack(side=tk.LEFT, padx=5, ipadx=15)
+        
+        self.sales_tree = ttk.Treeview(self.tab_sales, columns=("id", "pid", "qty", "price", "total", "date"), show="headings")
+        self.setup_cols(self.sales_tree, {
+            "id": ("Sale ID", 80), "pid": ("Product ID", 90), "qty": ("Qty", 70),
+            "price": ("Unit Price", 90), "total": ("Total Amount", 100), "date": ("Date/Time", 140)
+        })
+        self.sales_tree.pack(fill=tk.BOTH, expand=True, pady=5)
