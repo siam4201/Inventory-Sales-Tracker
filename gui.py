@@ -235,9 +235,6 @@ class InventoryApp:
                 ent.delete(0, tk.END)
 
     def add_product(self):
-        pass
-
-    def __disabled_add_product(self):
         try:
             p = self.manager.add_product(
                 self.inputs["id"].get().strip(),
@@ -254,9 +251,6 @@ class InventoryApp:
             messagebox.showerror("Error", str(e))
 
     def update_product(self):
-        pass
-
-    def __disabled_update_product(self):
         p_id = self.inputs["id"].get().strip()
         if not p_id: return
         
@@ -276,9 +270,6 @@ class InventoryApp:
             messagebox.showerror("Error", str(e))
 
     def delete_product(self):
-        pass
-
-    def __disabled_delete_product(self):
         p_id = self.inputs["id"].get().strip()
         if not p_id: return
         if messagebox.askyesno("Confirm Delete", f"Delete product {p_id}?"):
@@ -305,9 +296,6 @@ class InventoryApp:
             self.lbl_sales_preview.config(text=f"Total: $0.00 (In Stock: {prod.quantity})")
 
     def submit_sale(self):
-        pass
-
-    def __disabled_submit_sale(self):
         sel = self.cmb_sales_prod.get()
         qty_s = self.ent_sales_qty.get().strip()
         if not sel or not qty_s: return
