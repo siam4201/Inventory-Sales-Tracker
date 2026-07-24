@@ -1,0 +1,82 @@
+[
+    {
+        "product_id": "P101",
+        "name": "Gaming Laptop",
+        "category": "Electronics",
+        "price": 1200.0,
+        "quantity": 15,
+        "low_stock_threshold": 5
+    },
+    {
+        "product_id": "P102",
+        "name": "Wireless Mouse",
+        "category": "Electronics",
+        "price": 25.5,
+        "quantity": 40,
+        "low_stock_threshold": 10
+    },
+    {
+        "product_id": "P103",
+        "name": "Cotton T-Shirt",
+        "category": "Clothing",
+        "price": 19.99,
+        "quantity": 100,
+        "low_stock_threshold": 15
+    },
+    {
+        "product_id": "P104",
+        "name": "Running Shoes",
+        "category": "Clothing",
+        "price": 85.0,
+        "quantity": 30,
+        "low_stock_threshold": 8
+    },
+    {
+        "product_id": "P105",
+        "name": "Organic Milk 1L",
+        "category": "Groceries",
+        "price": 3.49,
+        "quantity": 50,
+        "low_stock_threshold": 12
+    },
+    {
+        "product_id": "P106",
+        "name": "Wheat Bread",
+        "category": "Groceries",
+        "price": 2.29,
+        "quantity": 60,
+        "low_stock_threshold": 15
+    },
+    {
+        "product_id": "P107",
+        "name": "Chef Knife 8-inch",
+        "category": "Home & Kitchen",
+        "price": 45.0,
+        "quantity": 20,
+        "low_stock_threshold": 5
+    },
+    {
+        "product_id": "P108",
+        "name": "Non-Stick Frying Pan",
+        "category": "Home & Kitchen",
+        "price": 35.0,
+        "quantity": 3,
+        "low_stock_threshold": 5
+    },
+    {
+        "product_id": "P109",
+        "name": "Python Programming",
+        "category": "Books",
+        "price": 49.99,
+        "quantity": 25,
+        "low_stock_threshold": 6
+    },
+    {
+        "product_id": "P110",
+        "name": "Introduction to NumPy",
+        "category": "Books",
+        "price": 39.99,
+        "quantity": 8,
+        "low_stock_threshold": 10
+    }
+]

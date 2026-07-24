@@ -1,0 +1,42 @@
+[
+    {
+        "sale_id": "S1001",
+        "product_id": "P101",
+        "quantity_sold": 2,
+        "sale_price": 1200.0,
+        "sale_date": "2026-07-01 10:15:30.000000",
+        "total_amount": 2400.0
+    },
+    {
+        "sale_id": "S1002",
+        "product_id": "P102",
+        "quantity_sold": 5,
+        "sale_price": 25.5,
+        "sale_date": "2026-07-02 14:20:00.000000",
+        "total_amount": 127.5
+    },
+    {
+        "sale_id": "S1003",
+        "product_id": "P105",
+        "quantity_sold": 10,
+        "sale_price": 3.49,
+        "sale_date": "2026-07-03 09:05:15.000000",
+        "total_amount": 34.900000000000006
+    },
+    {
+        "sale_id": "S1004",
+        "product_id": "P109",
+        "quantity_sold": 3,
+        "sale_price": 49.99,
+        "sale_date": "2026-07-04 16:45:00.000000",
+        "total_amount": 149.97
+    },
+    {
+        "sale_id": "S1005",
+        "product_id": "P103",
+        "quantity_sold": 12,
+        "sale_price": 19.99,
+        "sale_date": "2026-07-05 11:30:00.000000",
+        "total_amount": 239.88
+    }
+]
